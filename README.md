@@ -53,6 +53,7 @@ Now that we have the input scanned pdf file available in "resources" directory a
 
 ```
 import os
+############Specify your "dc-services-sdk-java-samples-master" folder's full path below#############
 java_services_sdk_path = "Your_path_to_dc_services_SDK/dc-services-sdk-java-samples-master"
 ###########Change directory to the "dc-services-sdk-java-samples-master" directory###############
 os.chdir(java_services_sdk_path)  
