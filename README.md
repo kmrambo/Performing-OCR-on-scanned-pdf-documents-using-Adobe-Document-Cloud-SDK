@@ -1,7 +1,5 @@
 # Performing-OCR-on-scanned-pdf-documents-using-Adobe-Document-Cloud-SDK
-This repository provides ways to use Adobe's Document Cloud SDK for performing OCR on scanned pdf documents using Python
-
-Note that Adobe's Document Cloud SDK also provides other services such as:
+This repository provides ways to use Adobe's Document Cloud SDK for performing OCR on scanned pdf documents using Python. Note that Adobe's Document Cloud SDK also provides other services such as:
 
 ![EBS Console after hosting](/images/image1.png) 
 
@@ -48,19 +46,21 @@ The sample application has the following requirements:
 
 # Running the service with Python
 Before running the python code to convert the scanned pdf to word, 
-1. You have to transfer your desired scanned input file that you intend to do OCR on to the directory ```"Your_path_to_dc_services_SDK/dc-services-sdk-java-samples- master/src/main/resources"```. Your file name should be changed to ```"exportPDFInput.pdf"``` and placed inside the "resources" folder.
-2. Find the path where maven is installed on your machine. TO find out the path type the following command in your terminal on your machine,```which mvn```.In my case I got the output as:```/usr/local/bin/mvn  #This output might differ from machine to machine depending on the path where maven is installed.```
+1. You have to transfer your desired scanned input file that you intend to do OCR on to the directory ```"Your_path_to_dc_services_SDK/dc-services-sdk-java-samples- master/src/main/resources"```. Your input file name should be changed to ```"exportPDFInput.pdf"``` and placed inside the "resources" folder.
+2. Find the path where maven is installed on your machine. To find out the path type the following command in your terminal on your machine,```#which mvn```.In my case I got the output as:```/usr/local/bin/mvn```. This output might differ from machine to machine depending on the path where maven is installed.```
 
 Now that we have the input scanned pdf file available in "resources" directory as "exportPDFInput.pdf" and the path where maven is installed, we can run the below script in python to convert the scanned pdf document to word document. 
 
 ```
 import os
 java_services_sdk_path = "Your_path_to_dc_services_SDK/dc-services-sdk-java-samples-master"
-#Change directory to the "dc-services-sdk-java-samples-master" directory
+###########Change directory to the "dc-services-sdk-java-samples-master" directory###############
 os.chdir(java_services_sdk_path)  
-#Convert scanned pdf to word
+###########Convert scanned pdf to word###################
 os.system("/usr/local/bin/mvn -f pom.xml exec:java -Dexec.mainClass=com.adobe.platform.operation.samples.exportpdf.ExportPDFToDOCX")
 ```
 where ```/usr/local/bin/mvn``` is the path of installation of maven in my machine. You dont have to change any other parameters in the ```os.system()``` command.
-Once this command successfully runs, you would have your converted docx file available in the repository ```/Your_path_to_dc_services_SDK/dc-services-sdk-java-samples-master/output/exportPdfOutput.docx```
+
+
+Once this command successfully runs, you would have your converted docx file available in the repository ```"/Your_path_to_dc_services_SDK/dc-services-sdk-java-samples-master/output/exportPdfOutput.docx"```
 
