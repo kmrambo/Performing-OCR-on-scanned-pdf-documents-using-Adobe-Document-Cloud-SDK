@@ -51,6 +51,7 @@ Before running the python code to convert the scanned pdf to word,
 
 Now that we have the input scanned pdf file available in "resources" directory as "exportPDFInput.pdf" and the path where maven is installed, we can run the below script in python to convert the scanned pdf document to word document. 
 
+**In Python:**
 ```
 import os
 ############Specify your "dc-services-sdk-java-samples-master" folder's full path below#############
