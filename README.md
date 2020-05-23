@@ -9,7 +9,7 @@ Among this we will only be using the "Export a PDF" service. This service solves
 2. To convert scanned pdf documents to Micorsoft word(.docx) format after OCR conversion . 
 
 
-At the time of writing Adobe has not release this feature commercially. It is still under public testing phase for early access. But anyone can get acccess to Adobe's Document cloud SDK by giving them a developer request on the following link:
+At the time of writing Adobe has not released this feature commercially. It is still under public testing phase for early access. But anyone can get acccess to Adobe's Document cloud SDK by giving them a developer request on the following link:
 https://www.adobe.io/apis/documentcloud/dcsdk/form.html#:// . 
 Once you submit the access request form, a member from Adobe will get in touch with you and provide you the access keys for using the service on an early access basis.This process will take roughly 2 days. Your developer access key that is provided to you will be a json file which is specific to your request. You got to have this json file to use Document Cloud services. The file will be provided to you as "dc-services-sdk-config.json".
 
